@@ -1,11 +1,7 @@
 root {
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColor: hsl(187, 85%, 43%);
-  --gradientColor: linear-gradient(
-    to-right,
-    hsl(187, 85%, 43%),
-    hsl(199, 100%, 33%)
-  );
+  --gradientColor: linear-gradient(to-right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(201, 33%, 16%);
   --textColor: hsl(240, 4%, 36%);
@@ -65,5 +61,9 @@ root {
   }
   .header .navBar .navLists .btn {
     margin-top: 1rem;
+  }
+  .header .navBar .navLists .btn a {
+    font-weight: 600;
+    color: var(--whiteColor);
   }
 }
