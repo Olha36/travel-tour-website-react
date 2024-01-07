@@ -34,6 +34,9 @@ root {
   color: var(--PrimaryColor);
   transform: translateY(5px);
 }
+.header .navLink {
+  margin-right: 13px;
+}
 .header .toggleNavBar,
 .header .closeNavBar {
   display: none;
