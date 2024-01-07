@@ -15,17 +15,37 @@ root {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: white;
   width: 100%;
   padding: 1rem;
   z-index: 1000;
   .logo {
     color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      font-size: 25px;
+      color: var(--PrimaryColor);
+      transform: translateY(5px);
+    }
+    
+  }
+  .toggleNavBar,
+  .closeNavBar {
+    display: none;
   }
 
+  
   @media screen and (max-width: 768px) {
+    .header {
+      justify-content: space-around;
+    }
     .navBar {
+      display: none;
       position: absolute;
       background: var(--whiteColorDream);
       height: max-content;
@@ -65,7 +85,27 @@ root {
             color: var(--whiteColor);
           }
         }
+
       }
+
+      .closeNavBar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);
+        &:hover {
+          color: var(--SecondaryColor);
+        }
+      }
+    }
+    .activeNavBar {
+      display: block;
+      top: 7rem
+    }
+    .toggleNavBar,
+    .closeNavBar {
+      display: block;
+      cursor: pointer;
     }
   }
 }

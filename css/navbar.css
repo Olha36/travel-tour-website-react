@@ -16,7 +16,7 @@ root {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: white;
   width: 100%;
   padding: 1rem;
@@ -24,9 +24,26 @@ root {
 }
 .header .logo {
   color: var(--blackColor);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+  transform: translateY(5px);
+}
+.header .toggleNavBar,
+.header .closeNavBar {
+  display: none;
 }
 @media screen and (max-width: 768px) {
+  .header .header {
+    justify-content: space-around;
+  }
   .header .navBar {
+    display: none;
     position: absolute;
     background: var(--whiteColorDream);
     height: -webkit-max-content;
@@ -65,5 +82,23 @@ root {
   .header .navBar .navLists .btn a {
     font-weight: 600;
     color: var(--whiteColor);
+  }
+  .header .navBar .closeNavBar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--PrimaryColor);
+  }
+  .header .navBar .closeNavBar:hover {
+    color: var(--SecondaryColor);
+  }
+  .header .activeNavBar {
+    display: block;
+    top: 7rem;
+  }
+  .header .toggleNavBar,
+.header .closeNavBar {
+    display: block;
+    cursor: pointer;
   }
 }
