@@ -3,7 +3,11 @@ import './home.scss'
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <section className="home">
+            <div className="overlay">
+                <video src=""></video>
+            </div>
+        </section>
     )
 }
 export default Home
