@@ -70,7 +70,7 @@
 
   .cardDiv {
     position: relative;
-    padding: 2rem 3rem;
+    padding: 3rem 3rem;
     background: var(--whiteColor);
     border-radius: 10px;
     gap: 1rem;
@@ -127,7 +127,7 @@
       position: absolute;
       background: var(--gradientColor);
       width: max-content;
-      bottom: -0.7rem;
+      bottom: 0.3rem;
       column-gap: .8rem;
       padding: 5px 1rem;
       border-radius: 3rem;
@@ -149,7 +149,20 @@
       }
     }
   }
-  
 
+  .homeFooterIcons {
+    width: 100%;
+    justify-content: space-between;
+
+    .icon {
+      font-size: 20px;
+      margin: 0 5px;
+      color: var(--whiteColor);
+      font-weight: 600;
+      &:hover {
+        color: var(--PrimaryColor);
+      }
+    }
+  }
   
 }
