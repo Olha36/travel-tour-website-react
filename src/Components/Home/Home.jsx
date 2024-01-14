@@ -28,21 +28,23 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="destinationInput">
-                        <label htmlFor="city">Search your destination:</label>
+                    <div className="dateInput">
+                        <label htmlFor="date">Select your date:</label>
 
                         <div className="input flex">
-                            <input type="text" placeholder='enter name here...' />
-                            <GrLocation className='icon' />
+                            <input type="date" />
                         </div>
                     </div>
 
-                    <div className="destinationInput">
-                        <label htmlFor="city">Search your destination:</label>
+                    <div className="priceInput">
+
+                        <div className="label_total flex">
+                           <label htmlFor="price">Max price</label>
+                            <h3 className="total">5000$</h3>
+                        </div>
 
                         <div className="input flex">
-                            <input type="text" placeholder='enter name here...' />
-                            <GrLocation className='icon' />
+                            <input type="range" max="5000" min="1000" />
                         </div>
                     </div>
                 </div>
