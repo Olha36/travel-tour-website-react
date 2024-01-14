@@ -2,6 +2,7 @@ import React from 'react'
 import './home.scss'
 import video from '../../assets/video1.mp4'
 import {GrLocation} from 'react-icons/gr'
+import {HiFilter } from 'react-icons/hi'
 
 const Home = () => {
     return (
@@ -46,6 +47,11 @@ const Home = () => {
                         <div className="input flex">
                             <input type="range" max="5000" min="1000" />
                         </div>
+                    </div>
+
+                    <div className="searchOptions flex">
+                        <HiFilter className='icon' />
+                        <span>MORE FILTERS</span>
                     </div>
                 </div>
             </div>
