@@ -1,6 +1,7 @@
 import React from 'react'
 import './home.scss'
 import video from '../../assets/video1.mp4'
+import {GrLocation} from 'react-icons/gr'
 
 const Home = () => {
     return (
@@ -20,6 +21,29 @@ const Home = () => {
                 <div className="cardDiv grid">
                     <div className="destinationInput">
                         <label htmlFor="city">Search your destination:</label>
+
+                        <div className="input flex">
+                            <input type="text" placeholder='enter name here...' />
+                            <GrLocation className='icon' />
+                        </div>
+                    </div>
+
+                    <div className="destinationInput">
+                        <label htmlFor="city">Search your destination:</label>
+
+                        <div className="input flex">
+                            <input type="text" placeholder='enter name here...' />
+                            <GrLocation className='icon' />
+                        </div>
+                    </div>
+
+                    <div className="destinationInput">
+                        <label htmlFor="city">Search your destination:</label>
+
+                        <div className="input flex">
+                            <input type="text" placeholder='enter name here...' />
+                            <GrLocation className='icon' />
+                        </div>
                     </div>
                 </div>
             </div>
