@@ -8,9 +8,9 @@ import portoKatsikiImg from '../../assets/img/portoKatsiki.jpeg'
 import redBeachImg from '../../assets/img/redBeach.jpg'
 import sardiniaImg from '../../assets/img/sardinia.jpg'
 import orlandoImg from '../../assets/img/orlando.jpg'
-import zanzibarImg from '../../assets/img/orlando.jpg'
-import canaryIslandsImg from '../../assets/img/orlando.jpg'
-import boracayImg from '../../assets/img/orlando.jpg'
+import zanzibarImg from '../../assets/img/zanzibar.jpg'
+import canaryIslandsImg from '../../assets/img/canaryIslands.jpg'
+import boracayImg from '../../assets/img/boracay.jpg'
 
 const Data = [
     {
