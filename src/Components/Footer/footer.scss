@@ -21,7 +21,6 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  background-color: red;
 
   .videoDiv {
     position: absolute;
@@ -48,7 +47,6 @@
   .secContent {
     width: 100%;
     height: max-content;
-    padding: 2rem initial;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -158,56 +156,58 @@
           }
         }
 
-        .footerLinks {
-          flex-basis: 50%;
-          width: 100%;
-          gap: 1rem;
-          grid-template-columns: repeat(2, 1fr);
-          justify-content: space-between;
+        
+      }
 
-          .linkGroup {
-            .groupTitle {
-              display: block;
-              font-weight: 600;color: 
-              var(--blackColor);
-              margin-bottom: .5rem;
+      .footerLinks {
+        flex-basis: 50%;
+        width: 100%;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .linkGroup {
+          .groupTitle {
+            display: block;
+            font-weight: 600;
+            color: var(--blackColor);
+            margin-bottom: .5rem;
+          }
+
+          .footerList {
+            font-size: 15px;
+            color: var(--textColor);
+            transition: .3s ease-in-out;
+            
+            .icon {
+              font-size: 15px;
+              color: var(--greyText);
             }
 
-            .footerList {
-              font-size: 15px;
-              color: var(--textColor);
-              transition: .3s ease-in-out;
-              
+            &:hover {
+              color: var(--PrimaryColor);
+              transform: translateX(7px);
+
               .icon {
-                font-size: 15px;
-                color: var(--greyText);
-              }
-
-              &:hover {
-                color: var(--PrimaryColor);
-                transform: translateX(7px);
-
-                .icon {
-                  color: var(--SecondaryColor);
-                }
+                color: var(--SecondaryColor);
               }
             }
           }
         }
+      }
 
-        .footerDiv {
-          flex-direction: column;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: var(--SecondaryColor);
-          padding: .5rem 2rem;
+      .footerDiv {
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--SecondaryColor);
+        padding: .5rem 2rem;
 
-          small {
-            font-size: 10px;
-            color: var(--whiteColor);
-          }
+        small {
+          font-size: 10px;
+          color: var(--whiteColor);
         }
       }
     }

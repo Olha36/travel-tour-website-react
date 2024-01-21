@@ -29,10 +29,12 @@ const Footer = () => {
 
                 <div className="footerCard flex">
                     <div className="footerIntro flex">
-                        <a href="#" className='logo flex'>
-                            <MdOutlineTravelExplore className='icon' />  
-                            Travel.
-                        </a>
+                        <div className="logoDiv">
+                            <a href="#" className='logo flex'>
+                                <MdOutlineTravelExplore className='icon' />  
+                                Travel.
+                            </a>
+                        </div>
 
                         <div className="footerParagraph">
                         Discover the world with our expertly crafted tours that promise unforgettable experiences. 
@@ -52,7 +54,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="footerLinks grid">
+                    <div className="footerLinks flex">
                         {/* group one */}
                         <div className="linkGroup">
                             <span className="groupTitle">
@@ -138,9 +140,10 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="footerDiv flex"></div>
-                    <small>BEST TRAVEL WEBSITE THEME</small>
-                    <small>COPYRIGHTS RESERVED</small>
+                    <div className="footerDiv flex">
+                        <small>BEST TRAVEL WEBSITE THEME</small>
+                        <small>COPYRIGHTS RESERVED</small>
+                    </div>
                 </div>
             </div>
         </section>

@@ -21,7 +21,6 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  background-color: red;
 }
 .footer .videoDiv {
   position: absolute;
@@ -48,7 +47,6 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  padding: 2rem initial;
   display: flex;
   align-self: center;
   justify-content: center;
@@ -150,36 +148,36 @@
 .footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
   color: var(--PrimaryColor);
 }
-.footer .secContent .footerCard .footerIntro .footerLinks {
+.footer .secContent .footerCard .footerLinks {
   flex-basis: 50%;
   width: 100%;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-.footer .secContent .footerCard .footerIntro .footerLinks .linkGroup .groupTitle {
+.footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
   display: block;
   font-weight: 600;
   color: var(--blackColor);
   margin-bottom: 0.5rem;
 }
-.footer .secContent .footerCard .footerIntro .footerLinks .linkGroup .footerList {
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList {
   font-size: 15px;
   color: var(--textColor);
   transition: 0.3s ease-in-out;
 }
-.footer .secContent .footerCard .footerIntro .footerLinks .linkGroup .footerList .icon {
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
   font-size: 15px;
   color: var(--greyText);
 }
-.footer .secContent .footerCard .footerIntro .footerLinks .linkGroup .footerList:hover {
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover {
   color: var(--PrimaryColor);
   transform: translateX(7px);
 }
-.footer .secContent .footerCard .footerIntro .footerLinks .linkGroup .footerList:hover .icon {
+.footer .secContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
   color: var(--SecondaryColor);
 }
-.footer .secContent .footerCard .footerIntro .footerDiv {
+.footer .secContent .footerCard .footerDiv {
   flex-direction: column;
   position: absolute;
   bottom: 0;
@@ -188,7 +186,7 @@
   background: var(--SecondaryColor);
   padding: 0.5rem 2rem;
 }
-.footer .secContent .footerCard .footerIntro .footerDiv small {
+.footer .secContent .footerCard .footerDiv small {
   font-size: 10px;
   color: var(--whiteColor);
 }
