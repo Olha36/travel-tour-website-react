@@ -53,31 +53,89 @@ const Footer = () => {
                     </div>
 
                     <div className="footerLinks grid">
-                        <div className="linkGroup"></div>
-                        <span className="groupTitle">
-                            OUR AGENCY
-                        </span>
+                        {/* group one */}
+                        <div className="linkGroup">
+                            <span className="groupTitle">
+                                OUR AGENCY
+                            </span>
 
-                        <li className="footerList flex">
-                            <FiChevronRight className='icon' />
-                            Services
-                        </li>
-                        <li className="footerList flex">
-                            <FiChevronRight className='icon' />
-                            Insurance
-                        </li>
-                        <li className="footerList flex">
-                            <FiChevronRight className='icon' />
-                            Agency
-                        </li>
-                        <li className="footerList flex">
-                            <FiChevronRight className='icon' />
-                            Tourism
-                        </li>
-                        <li className="footerList flex">
-                            <FiChevronRight className='icon' />
-                            Payment
-                        </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Services
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Insurance
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Agency
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Tourism
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Payment
+                            </li>
+                        </div>
+
+                        {/* group two */}
+                        <div className="linkGroup">
+                            <span className="groupTitle">
+                                Partners
+                            </span>
+
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Bookings
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Rentcars
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                HostelWorld
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Trivago
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                TripAdvisor
+                            </li>
+                        </div>
+
+                        {/* group three */}
+                        <div className="linkGroup">
+                            <span className="groupTitle">
+                                LAST MINUTE
+                            </span>
+
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                London
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                California
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Indonesia
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Europe
+                            </li>
+                            <li className="footerList flex">
+                                <FiChevronRight className='icon' />
+                                Oceania
+                            </li>
+                        </div>
                     </div>
                 </div>
             </div>
