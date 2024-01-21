@@ -3,6 +3,8 @@ import './main.scss'
 import {HiOutlineLocationMarker} from 'react-icons/hi'
 import {HiOutlineClipboardCheck} from 'react-icons/hi'
 import img from '../../assets/img/beach.jpg'
+import beach2x from '../../assets/img/beach@2x.jpg'
+import beach3x from '../../assets/img/beach@3x.jpg'
 import goldenBeachImg from '../../assets/img/goldenBeach.jpg'
 import portoKatsikiImg from '../../assets/img/portoKatsiki.jpeg'
 import redBeachImg from '../../assets/img/redBeach.jpg'
@@ -109,10 +111,16 @@ const Main = () => {
             <div className="secContent grid">
                 {
                     Data.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
+                         
                         return (
                             <div key={id} className="singleDestination">
                                 <div className="imageDiv">
-                                    <img src={imgSrc} alt={destTitle} />
+                                    <img 
+                                        src={imgSrc} 
+                                        alt={destTitle} 
+                                        srcSet={imgSrc ? `${beach2x} 2x, ${imgSrc} 1x` : `${beach3x}` }  
+                                    />
+                                    
                                 </div>
 
                                 <div className="cardInfo">
