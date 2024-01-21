@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.scss'
-import video from '../../assets/video1.mp4'
+import video from '../../assets/video/video1.mp4'
 import {GrLocation} from 'react-icons/gr'
 import {HiFilter } from 'react-icons/hi'
 import {FiFacebook} from 'react-icons/fi'
