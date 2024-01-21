@@ -43,7 +43,7 @@ const Footer = () => {
                         travel memories start here.
                         </div>
 
-                        <div className="footerSocials">
+                        <div className="footerSocials flex">
                             <FaTwitter className='icon' />
                             <FaYoutube className='icon' />
                             <FaInstagramSquare className='icon' />
