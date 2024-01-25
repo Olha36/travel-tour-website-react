@@ -3,19 +3,29 @@ import './main.scss'
 import {HiOutlineLocationMarker} from 'react-icons/hi'
 import {HiOutlineClipboardCheck} from 'react-icons/hi'
 import img from '../../assets/img/beach.jpg'
+import beach2x from '../../assets/img/beach@2x.jpg'
 import goldenBeachImg from '../../assets/img/goldenBeach.jpg'
+import goldenBeach2xImg from '../../assets/img/goldenBeach@2x.jpg'
 import portoKatsikiImg from '../../assets/img/portoKatsiki.jpeg'
+import portoKatsiki2xImg from '../../assets/img/portoKatsiki@2x.jpeg'
 import redBeachImg from '../../assets/img/redBeach.jpg'
+import redBeach2xImg from '../../assets/img/redBeach@2x.jpg'
 import sardiniaImg from '../../assets/img/sardinia.jpg'
+import sardinia2xImg from '../../assets/img/sardinia@2x.jpg'
 import orlandoImg from '../../assets/img/orlando.jpg'
-import zanzibarImg from '../../assets/img/orlando.jpg'
-import canaryIslandsImg from '../../assets/img/orlando.jpg'
-import boracayImg from '../../assets/img/orlando.jpg'
+import orlando2xImg from '../../assets/img/orlando@2x.jpg'
+import zanzibarImg from '../../assets/img/zanzibar.jpg'
+import zanzibar2xImg from '../../assets/img/zanzibar@2x.jpg'
+import canaryIslandsImg from '../../assets/img/canaryIslands.jpg'
+import canaryIslands2xImg from '../../assets/img/canaryIslands@2x.jpg'
+import boracayImg from '../../assets/img/boracay.jpg'
+import boracay2xImg from '../../assets/img/boracay@2x.jpg'
 
 const Data = [
     {
         id: 1,
         imgSrc: img,
+        img2xSrc: beach2x,
         destTitle: 'Bora Bora',
         location: 'New Zealand',
         grade: 'CULTURAL RELAX',
@@ -25,6 +35,7 @@ const Data = [
     {
         id: 2,
         imgSrc: goldenBeachImg,
+        img2xSrc: goldenBeach2xImg,
         destTitle: 'Golden beaches',
         location: 'Ciprus',
         grade: 'CULTURAL RELAX',
@@ -34,6 +45,7 @@ const Data = [
     {
         id: 3,
         imgSrc: portoKatsikiImg,
+        img2xSrc: portoKatsiki2xImg,
         destTitle: 'Porto Katsiki',
         location: 'Greece',
         grade: 'CULTURAL RELAX',
@@ -43,6 +55,7 @@ const Data = [
     {
         id: 4,
         imgSrc: redBeachImg,
+        img2xSrc: redBeach2xImg,
         destTitle: 'Red Beach',
         location: 'Greece',
         grade: 'CULTURAL RELAX',
@@ -52,6 +65,7 @@ const Data = [
     {
         id: 5,
         imgSrc: sardiniaImg,
+        img2xSrc: sardinia2xImg,
         destTitle: 'Sardinia',
         location: 'Italy',
         grade: 'CULTURAL RELAX',
@@ -61,6 +75,7 @@ const Data = [
     {
         id: 6,
         imgSrc: orlandoImg,
+        img2xSrc: orlando2xImg,
         destTitle: 'Orlando',
         location: 'USA',
         grade: 'CULTURAL RELAX',
@@ -70,6 +85,7 @@ const Data = [
     {
         id: 7,
         imgSrc: zanzibarImg,
+        img2xSrc: zanzibar2xImg,
         destTitle: 'Zanzibar',
         location: 'Tanzania',
         grade: 'CULTURAL RELAX',
@@ -79,6 +95,7 @@ const Data = [
     {
         id: 8,
         imgSrc: canaryIslandsImg,
+        img2xSrc: canaryIslands2xImg,
         destTitle: 'Canary Islands',
         location: 'Spain',
         grade: 'CULTURAL RELAX',
@@ -88,6 +105,7 @@ const Data = [
     {
         id: 9,
         imgSrc: boracayImg,
+        img2xSrc: boracay2xImg,
         destTitle: 'Boracay',
         location: 'Philippines',
         grade: 'CULTURAL RELAX',
@@ -108,11 +126,17 @@ const Main = () => {
 
             <div className="secContent grid">
                 {
-                    Data.map(({id, imgSrc, destTitle, location, grade, fees, description}) => {
+                    Data.map(({id, imgSrc, img2xSrc, destTitle, location, grade, fees, description}) => {
+                         
                         return (
                             <div key={id} className="singleDestination">
                                 <div className="imageDiv">
-                                    <img src={imgSrc} alt={destTitle} />
+                                    <picture>
+                                        <source srcSet={` ${imgSrc} 1x, ${img2xSrc} 2x`} media="(max-width: 699px)" />
+                                        <img src={img2xSrc ? imgSrc : img2xSrc} alt={destTitle} />
+                                    </picture>
+
+                                    
                                 </div>
 
                                 <div className="cardInfo">

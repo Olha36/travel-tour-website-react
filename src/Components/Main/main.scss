@@ -56,13 +56,11 @@
       }
 
       .imageDiv {
-        height: 180px;
+        height: 100%;
         width: 100%;
         overflow: hidden;
 
         img {
-          height: 100%;
-          width: 100%;
           object-fit: cover;
           transition: 2s ease;
         }
