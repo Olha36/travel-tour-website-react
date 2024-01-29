@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './main.scss'
 import {HiOutlineLocationMarker} from 'react-icons/hi'
 import {HiOutlineClipboardCheck} from 'react-icons/hi'
@@ -20,6 +20,9 @@ import canaryIslandsImg from '../../assets/img/canaryIslands.jpg'
 import canaryIslands2xImg from '../../assets/img/canaryIslands@2x.jpg'
 import boracayImg from '../../assets/img/boracay.jpg'
 import boracay2xImg from '../../assets/img/boracay@2x.jpg'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Data = [
     {
@@ -116,10 +119,16 @@ const Data = [
 ]
 
 const Main = () => {
+
+     useEffect(() => {
+        Aos.init({duration: 2000})
+    }, [])
+
+
     return (
         <section className="main container section">
             <div className="secTite">
-                <h3 className="title">
+                <h3 data-aos="fade-right" className="title">
                     Most visited destinations
                 </h3>
             </div>
@@ -129,7 +138,9 @@ const Main = () => {
                     Data.map(({id, imgSrc, img2xSrc, destTitle, location, grade, fees, description}) => {
                          
                         return (
-                            <div key={id} className="singleDestination">
+                            <div key={id} 
+                            data-aos="fade-up"
+                            className="singleDestination">
                                 <div className="imageDiv">
                                     <picture>
                                         <source srcSet={` ${imgSrc} 1x, ${img2xSrc} 2x`} media="(max-width: 699px)" />

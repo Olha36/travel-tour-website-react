@@ -37,6 +37,7 @@
 .main .secContent {
   justify-content: center;
   gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, 376px);
 }
 .main .secContent .singleDestination {
   height: 100%;
@@ -59,8 +60,6 @@
   overflow: hidden;
 }
 .main .secContent .singleDestination .imageDiv img {
-  height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: 2s ease;

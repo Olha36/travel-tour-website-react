@@ -39,6 +39,7 @@
   .secContent {
     justify-content: center;
     gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, 376px);
 
     .singleDestination {
       height: 100%;
